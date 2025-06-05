@@ -56,4 +56,60 @@ console.log(phone);
 
 let name = "Yam";
 let greeting = "Hello";
-console.log();
+let email = "yamk6285@gmail.com";
+
+console.log(`${greeting} ${name}, how are you?`);
+
+console.log("my name is " + name + " and my email address is " + email +".");
+ const bio = `${greeting} ${name}, how are you?`;
+console.log(greeting.toLocaleUpperCase());
+console.log(email.length);
+console.log(bio.split(".").length)
+
+
+//returning last item/ character
+console.log(email[email.length-1]);
+
+var fullName = "Yam Bahadur Khadka";
+/*
+let firstName = fullName.split(" ")[0];
+let middleName = fullName.split(" ")[1];
+let lastName = fullName.split(" ")[1];
+console.log("firstName = "+ firstName);
+console.log("middleName = " + middleName );
+console.log("lastName = " + lastName );
+
+console.log({
+    firstName,
+    middleName,
+    lastName
+})
+*/
+const firstname = fullName.slice(0, fullName.indexOf(" "));
+const middleName = fullName.slice(fullName.indexOf(" ") +1, fullName.lastIndexOf(" "))
+const lastName = fullName.slice(fullName.lastIndexOf(" ") + 1, fullName.length)
+console.log({firstname,
+    middleName,
+    lastName
+})
+
+
+
+// ++ increment and decrement 
+let x = 1;
+//++x === x = x + 1; first it will increase the value of x first.
+y = x++;
+// x++ === , first it will assign the value and the increase the value of x.
+
+console.log(y)// y = 1 ; first it will assign the original value of x to y.
+console.log(x)// x = 2; after assigning the value it will then start to increase the value.
+
+let a = 5;
+console.log(a**4);// power of a is 4 ; a * a* a * a
+
+a += 100; // a = a + 100 adding 100 to the previous value of a and returning new value of a after adding.
+a -= 100; // a = a - 100 subtracting the prognal value of the a with 100.
+
+let essay = "My name is Yam Khadka and ";
+essay += "I am from Nepal";
+console.log(essay);
