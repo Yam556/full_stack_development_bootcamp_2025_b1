@@ -49,3 +49,11 @@ console.log('This is the highest number: ' + firstnumber);
 let phone = '0426733324';
 console.log('my phone number is: ' + phone);
 console.log(phone);
+
+
+
+//string Manipulation
+
+let name = "Yam";
+let greeting = "Hello";
+console.log();
