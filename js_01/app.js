@@ -111,5 +111,6 @@ a += 100; // a = a + 100 adding 100 to the previous value of a and returning new
 a -= 100; // a = a - 100 subtracting the prognal value of the a with 100.
 
 let essay = "My name is Yam Khadka and ";
-essay += "I am from Nepal";
+essay += "I am from Nepal.";
 console.log(essay);
+
