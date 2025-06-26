@@ -36,7 +36,7 @@ const answerElement = document.getElementById("answer");
 const showHideButton = document.getElementById("show_hide_btn");
 const nextButton = document.getElementById("next");
 const prevButton = document.getElementById("previous");
-const progressBar = document.getElementById("progress_bar");
+const progressElement = document.getElementById("progress_bar");
 const progressPercentage = document.getElementById("progress_percentage");
 // This code is for a simple flashcard application that allows users to view questions and answers, navigate through them, and toggle the visibility of answers.
 const statsElement = document.getElementById("stats");
@@ -55,7 +55,7 @@ function showCurrentItem() {
 }
 function updateProgressBar() {
     const percentage = ((currentIndex + 1) / questionAnswer.length) * 100;
-    progressBar.classList.add(`w-[${percentage}%]`);
+    progressElement.style.width= `${400 * percentage / 100}px`;
     progressPercentage.textContent = parseInt(percentage) + "%";
     statsElement.textContent = `${currentIndex + 1} of ${questionAnswer.length}`;
 }
